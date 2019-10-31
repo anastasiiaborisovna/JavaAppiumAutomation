@@ -5,9 +5,10 @@ import org.junit.Test;
 public class MainClassTest {
 
     @Test
-    public void testGetLocalNumber() {
-        int expected = 14;
-        int actual = new MainClass().getLocalNumber();
-        Assert.assertFalse("Method getLocalNumber() does not return 14. Method return "+ actual,actual!=expected);
+    public void testGetClassNumber() {
+        int expected = 45;
+        int actual = new MainClass().getClassNumber();
+        Assert.assertFalse("Method getClassNumber() return "+ actual + ", " + actual+ " less than "+ expected,actual<expected);
+
     }
 }
