@@ -7,8 +7,7 @@ public class MainClassTest {
     MainClass objClass = new MainClass();
 
     @Test
-    public void testGetLocalNumber()
-    {
+    public void testGetLocalNumber() {
         int expected = 14;
         int actual = objClass.getLocalNumber();
 
