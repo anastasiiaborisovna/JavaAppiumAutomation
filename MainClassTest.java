@@ -4,13 +4,11 @@ import org.junit.Test;
 
 public class MainClassTest {
 
-    MainClass objClass = new MainClass();
-
     @Test
     public void testGetLocalNumber() {
         int expected = 14;
-        int actual = objClass.getLocalNumber();
+        int actual = new MainClass().getLocalNumber();
 
-        Assert.assertFalse("Number !=14",actual!=expected);
+        Assert.assertFalse("Method getLocalNumber() does not return 14",actual!=expected);
     }
 }
