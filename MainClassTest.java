@@ -5,10 +5,15 @@ import org.junit.Test;
 public class MainClassTest {
 
     @Test
-    public void testGetClassNumber() {
-        int expected = 45;
-        int actual = new MainClass().getClassNumber();
-        Assert.assertFalse("Method getClassNumber() return "+ actual + ", " + actual+ " less than "+ expected,actual<expected);
+    public void testGetClassString() {
+
+        String condition = new MainClass().getClassString();
+
+        Assert.assertTrue("The method does not contain substring \"Hello\" OR \"hello\"", condition.contains("hello") || condition.contains("Hello"));
+
 
     }
 }
+
+
+//метод getClassString возвращает строку, в которой есть подстрока “hello” или “Hello”
