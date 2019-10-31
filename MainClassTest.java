@@ -8,6 +8,6 @@ public class MainClassTest {
     public void testGetLocalNumber() {
         int expected = 14;
         int actual = new MainClass().getLocalNumber();
-        Assert.assertFalse("Method getLocalNumber() does not return 14",actual!=expected);
+        Assert.assertFalse("Method getLocalNumber() does not return 14. Method return "+ actual,actual!=expected);
     }
 }
