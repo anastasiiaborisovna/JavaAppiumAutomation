@@ -38,7 +38,7 @@ public class FirstTest {
     }
 
 
-    @Test
+    /*@Test
     public  void firstTest() {
 
         waitForElementAndClick(
@@ -60,7 +60,7 @@ public class FirstTest {
                 15
         );
 
-    }
+    } */
 
     @Test
     public void testChanelSearch(){
