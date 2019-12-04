@@ -32,13 +32,13 @@ public class AlwaysChangeRotationAfterTests {
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
+        driver.rotate(ScreenOrientation.PORTRAIT);
 
     }
 
     @After
     public void tearDown() {
 
-        driver.rotate(ScreenOrientation.PORTRAIT);
         driver.quit();
     }
 
