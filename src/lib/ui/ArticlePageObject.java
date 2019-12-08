@@ -14,7 +14,8 @@ public class ArticlePageObject extends MainPageObject {
             addToMyListOverlay = "org.wikipedia:id/onboarding_button",
             myListNameInput = "org.wikipedia:id/text_input",
             myListOkButton = "//*[@text = 'OK']",
-            closeArticleButton = "//android.widget.ImageButton[@content-desc = 'Navigate up']";
+            closeArticleButton = "//android.widget.ImageButton[@content-desc = 'Navigate up']",
+            articleTitle = "org.wikipedia:id/view_page_header_container";
 
     public ArticlePageObject(AppiumDriver driver) {
         super(driver);
@@ -101,6 +102,12 @@ public class ArticlePageObject extends MainPageObject {
                 5
         );
 
+    }
+
+    public void presentArticleTitle() {
+        this.assertElementPresent(
+                By.id(articleTitle),
+                "No title on the page 'Object-oriented programming language'");
     }
 
     public void closeArticle() {
